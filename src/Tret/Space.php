@@ -61,6 +61,11 @@ class Space extends Base
 				'pattern' 		=> '/([\?\!]\.\.)([а-яёa-z])/iu',
 				'replacement' 	=> '\1 \2'
 			),
+		'autospace_after_number' => array(
+				'description'   => 'Неразрывный пробел после цифры',
+				'pattern'               =>'/(\d)(\s)+/',
+				'replacement'   => '\1&nbsp;'
+			),
 		'many_spaces_to_one' => array(
 				'description'	=> 'Удаление лишних пробельных символов и табуляций',
 				'pattern' 		=> '/(\040|\t)+/',
