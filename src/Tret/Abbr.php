@@ -100,7 +100,7 @@ class Abbr extends Base
 		'nbsp_money_abbr_rev' => array(
 				'description'	=> 'Привязка валюты к числу спереди',
 				'pattern' 		=> '/(€|&euro;|\$)\s?(\d)/iu',
-				'replacement' 	=> '\1&nbsp;\2'
+				'replacement' 	=> '\1\2'
 			),
 		'nbsp_org_abbr' => array(
 				'description'	=> 'Привязка сокращений форм собственности к названиям организаций',
